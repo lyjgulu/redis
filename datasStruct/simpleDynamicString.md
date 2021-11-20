@@ -23,7 +23,7 @@ struct sdshdr {
 }；
 ```
 
-// TODO PIC
+![sdsStruct](https://raw.githubusercontent.com/lyjgulu/redis/main/image/sdsStruct.png)
 
 ##  SDS 与 C 字符串的区别
 

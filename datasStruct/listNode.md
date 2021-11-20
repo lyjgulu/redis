@@ -31,7 +31,7 @@ typedef struct list {
 }list;
 ```
 
-// TODO image
+![listAndListNode](https://raw.githubusercontent.com/lyjgulu/redis/main/image/listAndListNode.png)
 
 - Redis 链表特性
   1. 双端：链表节点带有`prev`和`next`指针，获取某个节点的前置节点和后置节点的复杂度都是 **O(1)**。
