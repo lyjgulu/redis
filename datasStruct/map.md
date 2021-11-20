@@ -1,5 +1,7 @@
 # 字典
 
+## 哈希表
+
 - 数据结构定义
 
 ```c
@@ -27,7 +29,6 @@ typedef struct dictht {
 
 ```c
 typedef struct dictEntry {
-  
   // 键
   void *key;
   
@@ -42,4 +43,29 @@ typedef struct dictEntry {
   struct dictEntry *next; 
 } dictEntry;
 ```
+
+![map](https://raw.githubusercontent.com/lyjgulu/redis/main/image/map.png)
+
+## 字典
+
+- 数据结构定义
+
+```c
+typedef struct dict {
+  // 键
+  dicType *type;
+  
+  // 值
+  void *privdata;
+  
+  // 哈希表
+  dictht ht[2]; 
+  
+  // rehash 索引
+  // 当 rehash 不在进行时，值为 -1
+  in trehashidx; /*rehashing not in progress if rehashidx == -1 */ 
+} dict;
+```
+
+- 普通状态下（没有进行 rehash）的字典
 
