@@ -12,3 +12,6 @@
 ![fileEventHandler](https://raw.githubusercontent.com/lyjgulu/redis/main/image/fileEventhandler.png)
 
 -  I/O 多路复用程序会将所有产生事件的套接字都放到一个队列里面，以有序、同步、每次一个套接字的方式向文件事件分派器传送套接字。
+
+![taojiezi](https://raw.githubusercontent.com/lyjgulu/redis/main/image/socketlist.png)
+
