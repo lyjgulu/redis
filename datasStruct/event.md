@@ -8,3 +8,7 @@
 - 基于 Reactor 模式开发的网络事件处理器，称为文件事件处理器。
   - 使用 I/O 多路复用程序来同时监听多个套接字，并根据套接字目前执行的任务来为套接字关联不同的事件处理器。
   - 当被监听的套接字准备好执行连接应答（accept）、读取（read）、写人（write）、关闭（close）等操作时，与操作相对应的文件事件就会产生，这时文件事件处理器就会调用套接字之前关联好的事件处理器来处理这些事件。
+
+![fileEventHandler](https://raw.githubusercontent.com/lyjgulu/redis/main/image/fileEventhandler.png)
+
+-  I/O 多路复用程序会将所有产生事件的套接字都放到一个队列里面，以有序、同步、每次一个套接字的方式向文件事件分派器传送套接字。
