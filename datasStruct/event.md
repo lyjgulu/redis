@@ -15,3 +15,13 @@
 
 ![taojiezi](https://raw.githubusercontent.com/lyjgulu/redis/main/image/socketlist.png)
 
+![scoketprocess](https://raw.githubusercontent.com/lyjgulu/redis/main/image/scoketprocess.png)
+
+## 时间事件
+
+1. 定时事件
+2. 周期性事件
+
+### 实现
+
+- 将所有时间事件放在一个无序列表中，遍历整个链表，查找已到达的时间事件，并调用相应的时间处理器。
